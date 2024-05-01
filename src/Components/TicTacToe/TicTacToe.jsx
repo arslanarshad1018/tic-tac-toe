@@ -81,14 +81,15 @@ const TicTacToe = () => {
         }
     } 
 
-    const reset =()=>{
+    const reset = () => {
         setLock(false);
-        data = ["","","","","","","","",""]
+        data = ["", "", "", "", "", "", "", "", ""];
         titleRef.current.innerHTML = 'Tic Tac Toe Game';
-        box_array.map((e)=>{
+        box_array.forEach((e) => {
             e.current.innerHTML = "";
-        })
+        });
     }
+    
 
 
 
